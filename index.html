@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+            <!-- JavaScript Bundle with Popper -->
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+                rel="stylesheet"
+            />
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Nav Bar -->
+<nav class="navbar navbar-light px-4">
+    <a class="navbar-brand" href="#">
+    
+    </a>
+    <div class="my-2 my-lg-0" id="navbarText">
+        <img class="navimg" src="images/Group 42.png" alt="">
+        <a class="btn header_btn">Place new order</a>
+        <img class="navimg" src="images/Group 39.png" alt="">
+      </div>    
+</nav>
+
+<div class="container">
+    <div class="row header">
+        <p class="title col-sm">My Wishlist</p>
+        <div class="col-6 d-none d-xl-block"></div>
+        <div class="col-sm"><a href="" class="wish_btn" data-bs-toggle="modal" data-bs-target="#WishlistModal"><img src="images/create_btn.png" alt="" class="wish_btn_img"> Create New Wishlist</a></div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="desc_col">
+                <div class="row row-cols-2">
+                    <div class="col all_wish_col d-flex justify-content-center"><img src="images/image 3.png" alt=""></div>
+                    <div class="col all_wish_col d-flex justify-content-center"><img src="images/image 4.png" alt=""></div>
+                    <div class="col all_wish_col d-flex justify-content-center"><img src="images/image 5.png" alt=""></div>
+                    <div class="col all_wish_col d-flex justify-content-center more_img_div"><p class="more_img">+ 8</p></div>
+                  </div>
+            </div>      
+            <div class="descr_div">
+                <p class="descr_title">All Wishlist Items</p>
+                <p class="descr_price">95, 200 <span class="ngn">NGN</span></p>
+            </div>
+            
+
+        </div>
+        <div class="col">
+            <div class="desc_col">
+                <img src="images/phoneimage 3.png" alt="" class="lrg_img">
+            </div>    
+            <div class="descr_div">
+                <p class="descr_title">My 23rd Birthday list</p>
+                <p class="descr_price">22, 300 <span class="ngn">NGN</span></p>
+                <span class="descr_donation">0 NGN Donated</span>
+            </div>
+            
+
+        </div>
+        <div class="col">
+            <div class="desc_col">
+                <img src="images/tray_image 3.png" alt="" class="lrg_img">
+            </div>    
+            <div class="descr_div">
+                <p class="descr_title">Home Relocation</p>
+                <p class="descr_price">42, 250<span class="ngn">NGN</span></p>
+                <span class="descr_donation">8,500 NGN Donated</span>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="WishlistModal" tabindex="-1" aria-labelledby="WishlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header position-relative">
+            <div class="modal_title_div">
+                <p class="modal_title">Create New Wishlist</p>
+                <p class="modal_title_text">Create a wishlist and share with friends to chip in.</p>
+            </div>
+          <img src="images/Cancel Modal.png" alt="" data-bs-dismiss="modal" aria-label="Close" class="position-absolute top-0 end-0 p-1">
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="mb-3 pb-2">
+                <div class="d-flex justify-content-between">
+                    <label for="id_address_line_1" class="form-label">Wishlist Title</label>
+                    <span class="modal_max_words">0/50</span>
+                </div>
+                <input type="text" class="form-control shadow-none form_input" id="id_address_line_1"
+                       aria-describedby="lastNameHelp" placeholder="e.g. My Birthday Wishlist" name="address_line_1">
+                <div id="lastNameHelp" class="form-text error-text"></div>
+            </div>    
+            
+            <div class="mb-3 pb-2">
+                <div class="d-flex justify-content-between">
+                    <label for="id_address_line_1" class="form-label">Wishlist Description</label>
+                    <span class="modal_max_words">0/100</span>
+                </div>
+                <textarea type="text" class="form-control shadow-none form_input" id="id_address_line_1"
+                       aria-describedby="lastNameHelp" placeholder="Enter A Description" name="address_line_1"></textarea>
+                <div id="lastNameHelp" class="form-text error-text"></div>
+            </div>               
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn close_modal" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn save_modal">Save Wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
