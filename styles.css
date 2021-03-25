@@ -15,7 +15,7 @@ body
 .title
 {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 37px;
 }
 
@@ -33,12 +33,27 @@ body
     padding: 20px;
     background-color: #f6f6f6; 
     text-decoration: none; 
+    transition: all 0.3s;
+    width: 253px;
+    height: 65px; 
+
+}
+
+.wish_btn:hover,
+.wish_btn:active {
+    color: #06415D !important;
+    background-color: #eee;
+}
+
+
+.wish_btn a :hover
+{
+    color: #06415D !important;
+    background-color: #b2b2b2;
 }
 
 .desc_col
 {
-    width: 310px;
-    height: 257px;
     left: 0px;
     top: 0px;
     
@@ -80,7 +95,7 @@ body
 .descr_price
 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 37px;
     color: #000000; 
     margin-bottom: 0px;   
